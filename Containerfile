@@ -6,6 +6,6 @@ USER root
 
 #RUN mamba install -y astropy <libraries>
 
-#RUN pip install <libraries>
+RUN pip install matplotlib numpy scipy statsmodels
 
 USER $NB_USER

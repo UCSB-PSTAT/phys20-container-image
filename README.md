@@ -1,9 +1,3 @@
-# Container image source for <course>
-Info here about where to find and run this image.
-
-# Template instructions (**DELETE THIS SECTION**)
-
-* Uncomment and add necessary libraries to Containerfile
-* mv Jenkinsfile.template to Jenkinsfile
-* Update image variable and add tests to Jenkinsfile
+# Container image source for PHYS 20BL
+You can obtain this image with `podman pull docker.io/ucsb/phys20bl:latest`. 
 
