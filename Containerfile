@@ -4,8 +4,10 @@ MAINTAINER LSIT Systems <lsitops@lsit.ucsb.edu>
 
 USER root
 
-#RUN mamba install -y astropy <libraries>
+RUN apt update && \
+    apt install dvipng texlive-latex-extra texlive-fonts-recommended cm-super && \
+    apt clean
 
-RUN pip install matplotlib numpy scipy statsmodels
+RUN pip install matplotlib numpy scipy statsmodels SciencePlots
 
 USER $NB_USER
