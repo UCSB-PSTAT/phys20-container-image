@@ -4,7 +4,7 @@ pipeline {
         upstream(upstreamProjects: 'UCSB-PSTAT GitHub/jupyter-base/main', threshold: hudson.model.Result.SUCCESS)
     }
     environment {
-        IMAGE_NAME = 'phys20bl'
+        IMAGE_NAME = 'phys20'
     }
     stages {
         stage('Build Test Deploy') {
