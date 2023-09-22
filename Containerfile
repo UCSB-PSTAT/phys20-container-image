@@ -8,6 +8,6 @@ RUN apt update && \
     apt install -y dvipng texlive-latex-extra texlive-fonts-recommended cm-super && \
     apt clean
 
-# RUN pip install matplotlib numpy scipy statsmodels SciencePlots
+RUN pip install SciencePlots
 
 USER $NB_USER
